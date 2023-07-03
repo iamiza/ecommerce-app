@@ -1,5 +1,6 @@
+import 'package:ecommerce/features/dashboard/presentation/dashboard.dart';
 import 'package:flutter/material.dart';
-import 'features/onboard/presentation/onboard_screen.dart';
+//import 'features/onboard/presentation/onboard_screen.dart';
 
 void main() {
   runApp(App());
@@ -10,7 +11,8 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: OnBoardScreen(),
+      //home: OnBoardScreen(),
+      home: Dashboard(),
     );
   }
 }
