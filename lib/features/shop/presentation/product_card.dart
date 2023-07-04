@@ -19,7 +19,7 @@ class ProductCard extends StatelessWidget {
         child: Column(
           children: [
             Image.asset(
-              'assets/images/imagename.png',
+              productImage,
               height: 130,
             ),
             Text(productTitle),

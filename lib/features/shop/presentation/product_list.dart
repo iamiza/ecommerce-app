@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:ecommerce/features/shop/presentation/product_card.dart';
 import 'package:flutter/material.dart';
 
@@ -15,8 +17,8 @@ class ProductList extends StatelessWidget {
         itemBuilder: (context, index) {
           return ProductCard(
               productImage: image[index],
-              productTitle: "Doll no 1",
-              productPrice: "Rs: 1500");
+              productTitle: "Item no ${index + 1}",
+              productPrice: "Rs: ${(Random().nextInt(20) + 1) * 100}");
         });
   }
 }
